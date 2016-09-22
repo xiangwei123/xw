@@ -38,9 +38,17 @@ namespace TestProject.UserService
             throw new NotImplementedException();
         }
 
+        public UsersOutput GetUserByName(UsersInput input)
+        {
+            var model =
+                _usersRepository.FirstOrDefault(w => w.UserName == input.UserName && w.PassWord == input.PassWord);
+            return model.MapTo<UsersOutput>();
+        }
+
         public UsersOutput GetUserById(int id)
         {
-            var model = _usersRepository.Get(id);
+            var model =
+                _usersRepository.Get(id);
             return model.MapTo<UsersOutput>();
         }
     }

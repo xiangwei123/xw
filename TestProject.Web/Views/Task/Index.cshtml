@@ -1,7 +1,8 @@
 ﻿@using TestProject.UserService.Dto
 
 @{
-    var result = (List<UsersOutput>) ViewBag.ModelList;
+    var result = (List<UsersOutput>)ViewBag.ModelList;
+    var qqInfo = Session["QQLOGIN"] as UsersOutput;
 }
 
 @*<form>
@@ -22,21 +23,39 @@
     </form>*@
 
 <div class="panel">
+    @if (qqInfo != null)
+    {
+
+    }
     <div class="panel-heading">
+
         @*<div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                Dropdown
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-            </ul>
-        </div>*@
-        <input type="button" value="注册" class="ui-button-text" onclick="javascript:window.location.href = '/Task/Register/'" />
-    </div>
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                </ul>
+            </div>*@
+        @if (qqInfo == null)
+        {
+            <input type="button" value="注册" class="ui-button-text" onclick="javascript:window.location.href = '/Task/Register/'"/>
+            <input type="button" value="登录" class="ui-button-text" onclick="ShowLogin()"/>
+        }
+        else
+        {
+            <span class="v-span1 v-font1 left">当前用户：@qqInfo.Account &nbsp; &nbsp;</span>
+
+            <span class="v-span1 v-font1 left">账号为：@qqInfo.UserName</span>
+            <a href="/Task/LoginOut" class="bl">【退出】</a>
+            <div>
+                <input type="button" value="杨颖" class="ui-button-text" onclick="javascript: window.location.href = '/Task/PlayPage/'"/>
+            </div>
+        }
     </div>
     <div class="panel-body">
         <table class="table">
@@ -65,3 +84,44 @@
         </table>
     </div>
 </div>
+
+<div class="lg-logindailog" style="display: none">
+    <div class="lg-dailogtitle">
+        登录 <i class="lg-dailogclose" id=lg-close></i>
+    </div>
+    <div class="lg-dailoghandle">
+        <div>
+            用户名:<input type="text" id="UserName">
+        </div>
+        <div>
+            密&nbsp;&nbsp;&nbsp;码:<input type="text" id="PassWord">
+        </div>
+        <p class="lg-validationrule" id="lg-mobilerule"></p>
+        <a id="Login"><i class="lg-qqlogin" onclick="Login()">登录</i></a>
+        <div class="clear"></div>
+
+
+        <div class="clear"></div>
+        <p class="lg-validationrule" id="lg-messagecoderule"></p>
+    </div>
+
+</div>
+
+<script>
+    function ShowLogin() {
+        $('.lg-logindailog').css('height', '300');
+        $('.lg-logindailog').show();
+    }
+
+    function Login() {
+        var model = {};
+        model.UserName = $('#UserName').val().trim();
+        model.PassWord = $('#PassWord').val().trim();
+        $.post('/Task/LoginInfo', { input: model }, function (result) {
+            if (result != null) {
+                alert('登录成功，可以在线观看杨颖');
+                window.location.href = "/Task/Index";
+            }
+        });
+    }
+</script>

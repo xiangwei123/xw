@@ -43,5 +43,29 @@ namespace TestProject.Web.Controllers
             });
             return Json(result);
         }
+
+        public ActionResult LoginInfo(UsersInput input)
+        {
+           var result=_userService.GetUserByName(input);
+            var model=new UsersOutput()
+            {
+                UserName = result.UserName,
+                PassWord = result.PassWord,
+                Id = result.Id
+            };
+            Session["QQLOGIN"] = result;
+            return Json(result);
+        }
+
+        public ActionResult LoginOut()
+        {
+            Session["QQLOGIN"] = null;
+            return Redirect("/");
+        }
+
+        public ActionResult PlayPage()
+        {
+            return View();
+        }
     }
 }

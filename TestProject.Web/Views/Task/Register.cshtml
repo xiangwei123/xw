@@ -8,6 +8,7 @@
 <head>
     <meta name="viewport" content="width=device-width"/>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Content/js/app.js"></script>
     <title></title>
 </head>
 <body>
@@ -49,6 +50,15 @@
 <script type="text/javascript" language="javascript">
     function Register() {
         var model = {};
+        var account = $('#Account').val();
+        var username = $('#UserName').val();
+        var password = $('#PassWord').val();
+        if (account == "") {
+            alert("帐号不能为空！");
+        }
+        if (username == "" || password=="") {
+            alert("用户名或密码不能为空！");
+        }
         model.Account = $('#Account').val();
         model.UserName = $('#UserName').val();
         model.PassWord = $('#PassWord').val();

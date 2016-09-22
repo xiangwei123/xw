@@ -215,9 +215,28 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\ckplayer\ckplayer.js" />
+    <Content Include="Content\ckplayer\ckplayer.swf" />
+    <Content Include="Content\ckplayer\ckplayer.xml" />
+    <Content Include="Content\ckplayer\language.xml" />
+    <Content Include="Content\ckplayer\related.xml" />
+    <Content Include="Content\ckplayer\share.xml" />
+    <Content Include="Content\ckplayer\share\feixin.png" />
+    <Content Include="Content\ckplayer\share\google.png" />
+    <Content Include="Content\ckplayer\share\kaixin001.png" />
+    <Content Include="Content\ckplayer\share\msn.png" />
+    <Content Include="Content\ckplayer\share\qq.png" />
+    <Content Include="Content\ckplayer\share\qq2.png" />
+    <Content Include="Content\ckplayer\share\qzone.png" />
+    <Content Include="Content\ckplayer\share\rr.png" />
+    <Content Include="Content\ckplayer\share\sina.png" />
+    <Content Include="Content\ckplayer\share\sohu.png" />
+    <Content Include="Content\ckplayer\share\tianya.png" />
+    <Content Include="Content\ckplayer\style.swf" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\js\app.js" />
+    <Content Include="Content\js\jquery-1.7.1.min.js" />
     <Content Include="Content\js\jquery-input-match.js" />
     <Content Include="Content\js\jquery.cookie.js" />
     <Content Include="Content\js\jquery.mCustomScrollbar.concat.min.js" />
@@ -266,6 +285,7 @@
     <Content Include="Content\css\main.min.css">
       <DependentUpon>main.css</DependentUpon>
     </Content>
+    <Content Include="Content\video\test.mp4" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\images\12345.jpg" />
@@ -383,6 +403,7 @@
     <Content Include="Views\Task\Index.cshtml" />
     <Content Include="Views\Task\ajaxbackInfo.cshtml" />
     <Content Include="Views\Task\Register.cshtml" />
+    <Content Include="Views\Task\PlayPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

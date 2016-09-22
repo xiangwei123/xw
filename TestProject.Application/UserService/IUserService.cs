@@ -18,6 +18,9 @@ namespace TestProject.UserService
 
        void UpdateUser(UsersInput users);
 
+       UsersOutput GetUserByName(UsersInput input);
+
        UsersOutput GetUserById(int id);
+
    }
 }
