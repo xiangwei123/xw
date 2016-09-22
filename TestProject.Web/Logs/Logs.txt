@@ -3733,3 +3733,81 @@ DEBUG 2016-09-22 16:16:01,663 [17   ] Abp.AutoMapper.AbpAutoMapperModule       -
 DEBUG 2016-09-22 16:16:01,704 [17   ] Abp.AutoMapper.AbpAutoMapperModule       - TestProject.UserService.Dto.UsersOutput
 DEBUG 2016-09-22 16:16:01,723 [17   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TestProject.IAppService.ITaskAppService' with service name 'app/task'.
 DEBUG 2016-09-22 16:16:01,724 [17   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TestProject.UserService.IUserService' with service name 'app/user'.
+DEBUG 2016-09-22 16:20:45,910 [16   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-22 16:20:45,910 [16   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-22 16:20:57,293 [17   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-22 16:20:59,756 [17   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2016-09-22 16:20:59,759 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 16:20:59,760 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 16:20:59,760 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 16:20:59,760 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 16:20:59,761 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 16:20:59,761 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 16:20:59,761 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: TestProject.TestProjectApplicationModule, TestProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 16:20:59,761 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: TestProject.TestProjectCoreModule, TestProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 16:20:59,761 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: TestProject.TestProjectDataModule, TestProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 16:20:59,761 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: TestProject.Web.TestProjectWebModule, TestProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 16:20:59,761 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: TestProject.TestProjectWebApiModule, TestProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 16:20:59,766 [17   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2016-09-22 16:20:59,998 [17   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2016-09-22 16:21:00,003 [17   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-09-22 16:21:00,003 [17   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-09-22 16:21:00,004 [17   ] Abp.Localization.LocalizationManager     - Initialized localization source: TestProject
+DEBUG 2016-09-22 16:21:00,150 [17   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-22 16:21:00,241 [17   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 2 classes defines auto mapping attributes
+DEBUG 2016-09-22 16:21:00,241 [17   ] Abp.AutoMapper.AbpAutoMapperModule       - TestProject.UserService.Dto.UsersInput
+DEBUG 2016-09-22 16:21:00,283 [17   ] Abp.AutoMapper.AbpAutoMapperModule       - TestProject.UserService.Dto.UsersOutput
+DEBUG 2016-09-22 16:21:00,307 [17   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TestProject.IAppService.ITaskAppService' with service name 'app/task'.
+DEBUG 2016-09-22 16:21:00,308 [17   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TestProject.UserService.IUserService' with service name 'app/user'.
+DEBUG 2016-09-22 16:33:01,431 [71   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-22 16:33:01,432 [71   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-22 17:54:38,295 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-22 17:54:39,378 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2016-09-22 17:54:39,381 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 17:54:39,382 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 17:54:39,382 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 17:54:39,382 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 17:54:39,382 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 17:54:39,382 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 17:54:39,383 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TestProject.TestProjectApplicationModule, TestProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 17:54:39,383 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TestProject.TestProjectCoreModule, TestProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 17:54:39,383 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TestProject.TestProjectDataModule, TestProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 17:54:39,383 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TestProject.Web.TestProjectWebModule, TestProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 17:54:39,383 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: TestProject.TestProjectWebApiModule, TestProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 17:54:39,386 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2016-09-22 17:54:40,757 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2016-09-22 17:54:40,807 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-09-22 17:54:40,808 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-09-22 17:54:40,870 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: TestProject
+DEBUG 2016-09-22 17:54:41,227 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-22 17:54:41,337 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 2 classes defines auto mapping attributes
+DEBUG 2016-09-22 17:54:41,337 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TestProject.UserService.Dto.UsersInput
+DEBUG 2016-09-22 17:54:41,471 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TestProject.UserService.Dto.UsersOutput
+DEBUG 2016-09-22 17:54:41,514 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TestProject.IAppService.ITaskAppService' with service name 'app/task'.
+DEBUG 2016-09-22 17:54:41,515 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TestProject.UserService.IUserService' with service name 'app/user'.
+DEBUG 2016-09-22 18:19:42,283 [57   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-22 18:19:42,283 [57   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-22 18:20:02,850 [73   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2016-09-22 18:20:03,485 [73   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2016-09-22 18:20:03,488 [73   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 18:20:03,489 [73   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 18:20:03,489 [73   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 18:20:03,489 [73   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 18:20:03,490 [73   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 18:20:03,490 [73   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 18:20:03,490 [73   ] Abp.Modules.AbpModuleManager             - Loaded module: TestProject.TestProjectApplicationModule, TestProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 18:20:03,490 [73   ] Abp.Modules.AbpModuleManager             - Loaded module: TestProject.TestProjectCoreModule, TestProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 18:20:03,490 [73   ] Abp.Modules.AbpModuleManager             - Loaded module: TestProject.TestProjectDataModule, TestProject.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 18:20:03,490 [73   ] Abp.Modules.AbpModuleManager             - Loaded module: TestProject.Web.TestProjectWebModule, TestProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 18:20:03,490 [73   ] Abp.Modules.AbpModuleManager             - Loaded module: TestProject.TestProjectWebApiModule, TestProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2016-09-22 18:20:03,493 [73   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2016-09-22 18:20:03,793 [73   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2016-09-22 18:20:03,813 [73   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2016-09-22 18:20:03,813 [73   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2016-09-22 18:20:03,814 [73   ] Abp.Localization.LocalizationManager     - Initialized localization source: TestProject
+DEBUG 2016-09-22 18:20:03,928 [73   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-22 18:20:04,016 [73   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 2 classes defines auto mapping attributes
+DEBUG 2016-09-22 18:20:04,016 [73   ] Abp.AutoMapper.AbpAutoMapperModule       - TestProject.UserService.Dto.UsersInput
+DEBUG 2016-09-22 18:20:04,055 [73   ] Abp.AutoMapper.AbpAutoMapperModule       - TestProject.UserService.Dto.UsersOutput
+DEBUG 2016-09-22 18:20:04,076 [73   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TestProject.IAppService.ITaskAppService' with service name 'app/task'.
+DEBUG 2016-09-22 18:20:04,076 [73   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TestProject.UserService.IUserService' with service name 'app/user'.

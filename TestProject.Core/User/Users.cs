@@ -14,5 +14,6 @@ namespace TestProject.User
         public string UserName { get; set; }
         public string  PassWord { get; set; }
         public string Remark { get; set; }
+        public bool State { get; set; }
     }
 }

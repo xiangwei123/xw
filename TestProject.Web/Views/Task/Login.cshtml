@@ -84,10 +84,15 @@
         //});
         $.post('/Task/LoginInfo', { input: model }, function (result) {
             if (result.result != null) {
-                alert('登录成功，可以在线观看杨颖');
-                window.location.href = "/Task/Index";
+                if (result.result.state) {
+                    alert('登录成功，可以在线观看杨颖！');
+                    window.location.href = "/Task/Index";
+                } else {
+                    alert('登录成功，但你的帐号没有通过审核！');
+                    window.location.href = "/Task/Index";
+                }
             } else {
-                alert("没账号,登你吗个臭嗨");
+                alert("没账号,登你吗个臭嗨！");
             }
         });
  }

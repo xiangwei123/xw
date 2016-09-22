@@ -39,6 +39,7 @@ namespace TestProject.Web.Controllers
         {
             var result = Execute(() =>
             {
+                input.State = false;
                 _userService.AddUser(input);
             });
             return Json(result);
@@ -53,7 +54,8 @@ namespace TestProject.Web.Controllers
                 {
                     UserName = result.UserName,
                     PassWord = result.PassWord,
-                    Id = result.Id
+                    Id = result.Id,
+                    State = result.State
                 };
                 Session["QQLOGIN"] = result;
             }

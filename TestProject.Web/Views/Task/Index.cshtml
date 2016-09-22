@@ -22,16 +22,25 @@
 
             <span class="v-span1 v-font1 left">账号为：@qqInfo.UserName</span>
             <a href="/Task/LoginOut" class="bl">【退出】</a>
-            <div>
-                <input type="button" value="杨颖" class="btn-danger" onclick="javascript: window.location.href = '/Task/PlayPage/'"/>
-            </div>
+            if (qqInfo.State)
+            {
+                <div>
+                    <input type="button" value="杨颖" class="btn-danger" onclick="javascript: window.location.href = '/Task/PlayPage/'"/>
+                </div>
+            }
+            else
+            {
+                <div>
+                    <span>很抱歉！你的帐号没有审核通过,请联系管理员!(QQ:641656975)</span>
+                </div>
+            }
         }
         @*</div>*@
     </div>
     <div class="panel panel-default">
         <div class="panel-heading">Panel heading</div>
         <div class="panel-body">
-            <p>看不爽不BB</p>
+            <p>该列表为平台所有用户。页面上有隐藏内容。请注册登录帐号，并找管理员通过审核！</p>
         </div>
         <table class="table">
             <thead>
@@ -39,6 +48,7 @@
                     <th>编号</th>
                     <th>用户名</th>
                     <th>帐号</th>
+                    <th>是否审核通过</th>
                     <th>备注</th>
                 </tr>
             </thead>
@@ -47,10 +57,11 @@
                 {
                     i ++;
                     <tr>
-                        <td>@i</td>
-                        <td>@item.Account</td>
-                        <td>@item.UserName</td>
-                        <td>@item.Remark</td>
+                        <th>@i</th>
+                        <th>@item.Account</th>
+                        <th>@item.UserName</th>
+                        <th>@(item.State==false?"没有通过":"通过")</th>
+                        <th>@item.Remark</th>
                     </tr>
 
                 }
