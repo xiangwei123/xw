@@ -1,0 +1,424 @@
+
+
+.v-body {
+    border: 3px solid #eaeaea;
+    height: 460px;
+    width: 1190px;
+    margin:25px auto;
+}
+
+.v-body .v-bt2 {
+    color: #333;
+    font-size: 16px;
+    text-align: right;
+    padding: 15px;
+    width: 1160px;
+}
+
+.v-body .v-fw {
+    font-weight: bold;
+}
+
+.v-body .v-img {
+    width: 665px;
+    height: 338px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+/*µÇÂ¼Ò³*/
+.v-body .v-login {
+    width:500px;
+    height:400px;
+}
+.lg-homepage {
+
+
+}
+.lg-homepagehandle {
+    text-align: center;
+    margin: 80px auto 0 auto;
+    width: 255px;
+    height: auto;
+}
+
+
+/*µÇÂ¼´°¿Ú*/
+.logindailogmask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9999999;
+    background-color: #000;
+    filter: alpha(opacity=20);
+    opacity: 0.2;
+    display: none;
+}
+
+.lg-logindailog {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 380px;
+    height: 270px;
+    margin: auto;
+    border: 1px solid #B3B3B3;
+    z-index: 99999999;
+    background-color: #fff;
+    display: none;
+}
+
+ .lg-logindailog a {
+       color: #000;
+ }
+
+.lg-logindailog a:hover {
+       color: #c40000;
+ }
+
+.lg-dailogtitle {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #EEEEEE;
+}
+
+.lg-dailogclose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: url(../images/member/qqlogin.png) no-repeat -37px -21px;
+}
+
+    .lg-dailogclose:hover {
+        background: url(../images/member/qqlogin.png) no-repeat -37px -51px;
+    }
+
+.lg-dailoghandle {
+    text-align: center;
+    margin: 20px auto 0 auto;
+    width: 255px;
+    height: auto;
+}
+
+.lg-login-account {
+    height: 38px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.lg-account_l {
+    text-align: center;
+    float: left;
+    width: 55px;
+    height: 30px;
+    margin-top: 4px;
+    border-right: 1px solid #ccc;
+}
+
+    .lg-account_l i {
+        display: inline-block;
+        margin-top: 4px;
+        width: 18px;
+        height: 22px;
+        background: url(../images/member/qqlogin.png) 3px 0;
+    }
+
+.lg-account_r {
+    float: left;
+    width: 187px;
+    padding: 2px 0 0 5px;
+}
+
+    .lg-account_r input[name=loginaccount] {
+        height: 30px;
+        width: 100%;
+        line-height: 35px;
+        border: none;
+    }
+
+.lg-validationrule {
+    text-align: left;
+    line-height: 22px;
+    height: 22px;
+    width: 230px;
+    margin: auto;
+    font-size: 13px;
+}
+
+.lg-validation-error {
+    color: #ea524e;
+}
+
+.lg-validation-error i {
+        display: inline-block;
+        vertical-align: sub;
+        width: 16px;
+        height: 15px;
+        background: url(../images/member/qqlogin.png) 0 -31px;
+ }
+.phcolor {
+   color:#A9A9A9;
+}
+.clear {
+    clear: both;
+}
+
+.lg-login-code {
+    float: left;
+    height: 38px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.lg-code_l {
+    text-align: center;
+    float: left;
+    width: 55px;
+    height: 30px;
+    margin-top: 4px;
+    border-right: 1px solid #ccc;
+}
+
+ .lg-code_l i {
+        display: inline-block;
+        width: 18px;
+        height: 22px;
+        background: url(../images/member/qqlogin.png) -49px 0;
+ }
+
+.lg-code_r {
+    float: left;
+    width: 80px;
+    padding: 2px 5px 0 5px;
+}
+
+.lg-code_r input[name=logincode] {
+        height: 30px;
+        width: 100%;
+        line-height: 35px;
+        border: none;
+}
+
+.lg-validation-correct {
+    color: #000;
+}
+ .lg-validation-correct i {
+        display: inline-block;
+        vertical-align: sub;
+        width: 16px;
+        height: 15px;
+        background: url(../images/member/qqlogin.png) -22px -31px;
+}
+
+.lg-verificationcode {
+    float: left;
+    padding-left: 8px;
+}
+
+ .lg-verificationcode input[type=button] {
+        width: 85px;
+        height: 39px;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        letter-spacing: 1px;
+        border-radius: 4px;
+        background-color: #264a95;
+ }
+
+.lg-graphicalcode {
+    display: none;
+}
+
+.lg-login-graphicalcode {
+    float: left;
+    margin-bottom: 3px;
+    height: 38px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.lg-graphicalcode_l {
+    text-align:center;
+    float: left;
+    width: 55px;
+    height: 30px;
+    margin-top: 4px;
+    border-right: 1px solid #ccc;
+}
+
+.lg-graphicalcode_r {
+    float: left;
+    width: 80px;
+    padding: 2px 5px 0 5px;
+}
+
+.lg-graphicalcode_l i {
+    display: inline-block;
+    width: 18px;
+    height: 22px;
+    background: url(../images/member/qqlogin.png) -20px 0px;
+}
+
+.lg-graphicalcode_r input[name=logingraphicalcode] {
+    height: 30px;
+    width: 100%;
+    line-height: 35px;
+    border: none;
+}
+
+.lg-imgcode {
+    float: right;
+    padding-top: 8px;
+}
+
+    .lg-imgcode a {
+        font-size: 13px;
+    }
+
+.lg-dailogfooter {
+    width: 255px;
+    height: 65px;
+    margin: auto;
+}
+
+    .lg-dailogfooter > div {
+        padding-top: 5px;
+        height: 28px;
+        line-height: 28px;
+        font-size: 13px;
+        letter-spacing: 2px;
+        font-family: serif;
+    }
+
+.lg-dailogfooter input[name=btn-login] {
+        width: 100%;
+        height: 38px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        background-color: #264a95;
+        line-height: 38px;
+        cursor: pointer;
+        border-radius: 4px;
+        border: none;
+ }
+.lg-dailogfooter input[name=btn-login]:hover {
+     background-color: #377BDE;
+}
+.lg-dailogfooter input[name=btn-login]:active { 
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px #26499d inset;
+    box-shadow: 3px 3px 20px #26499d inset;
+
+}
+.lg-keepinpasssword {
+    float: right;
+}
+
+ .lg-keepinpasssword input {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        vertical-align: sub;
+}
+
+.lg-qqlogin {
+    display: inline-block;
+    vertical-align: sub;
+    width: 16px;
+    height: 16px;
+    background: url(../images/member/qqlogin.png) -1px -57px;
+}
+.registerfailedwindow {   
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 350px;
+    height: 200px;
+    margin: auto;
+    border: 1px solid #B3B3B3;
+    z-index: 99999999;
+    background-color: #fff;
+    display:none;
+}
+.dailogtitle {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #EEEEEE;
+}
+.dailogclose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: url(../images/member/qqlogin.png) no-repeat -37px -21px;
+}
+.dailogclose:hover{
+		
+   background:url(../images/member/qqlogin.png) no-repeat -37px -51px;
+}
+.dailoghandle {
+    text-align: center;
+    width: 255px;
+    height: auto;
+}
+.op{
+    margin: 30px auto 0 auto;
+}
+.dailog-btn{
+    margin-top:15px;
+    display:inline-block;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #264a95;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.jxll{
+   position: absolute;
+    right: 5%;
+    bottom: 5%;
+    color: #264a95;
+    font-size: 14px;
+}
+/*µÇÂ¼Ò³Í·²¿*/
+.lg-head {
+    width: 1200px;
+    height: 110px;
+    margin: auto;
+}
+.lg-head a{
+   display:inline-block;
+   vertical-align:middle;
+}
+.lg-head span{
+    font-size: 26px;
+    color: #bbb;
+    letter-spacing: 7px;
+}
+.lg-footer {
+    text-align:center;
+    color:#000;
+}

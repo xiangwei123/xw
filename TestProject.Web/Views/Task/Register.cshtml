@@ -1,0 +1,66 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+<div class="panel">
+    <div class="panel-heading">
+        <div>
+            <ul>
+                <li>
+                    帐&nbsp;&nbsp;&nbsp;号:<input id="Account" name="Account" type="text">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    用户名:<input id="UserName" name="UserName" type="text">
+                </li>
+            </ul>
+            <ul>
+                <li>密&nbsp;&nbsp;&nbsp;码:<input id="PassWord" name="PassWord" type="text"></li>
+            </ul>
+            <ul>
+                <li>备&nbsp;&nbsp;&nbsp;注:<input id="Remark" name="Remark" type="text"></li>
+            </ul>
+            <ul>
+                <li>
+                    <input type="submit" value="注册" class="btn-warning" onclick="Register()"/>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div>
+    <img src="~/Content/images/123.jpg"/>
+    <img src="~/Content/images/12345.jpg" />
+</div>
+</body>
+</html>
+<script src="~/Content/js/jquery.min.js"></script>
+<script src="~/Content/js/app.js"></script>
+<script type="text/javascript" language="javascript">
+    function Register() {
+        var model = {};
+        model.Account = $('#Account').val();
+        model.UserName = $('#UserName').val();
+        model.PassWord = $('#PassWord').val();
+        model.Remark = $('#Remark').val();
+        $.post("/Task/InsertUser", { input: model }, function (result) {
+            if (result.success) {
+                alert("注册成功！");
+                window.location.href = "/Task/Index";
+            }
+            //if (app.handleResponse(result)) {
+                
+            //}
+        });
+    }
+</script>

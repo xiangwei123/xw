@@ -1,0 +1,67 @@
+﻿@using TestProject.UserService.Dto
+
+@{
+    var result = (List<UsersOutput>) ViewBag.ModelList;
+}
+
+@*<form>
+        <div>
+            <div>
+                <ul>
+                    <li>编号&nbsp;用户名&nbsp;帐号&nbsp;密码&nbsp;备注</li>
+                </ul>
+                <ul>
+                    @foreach (var item in result)
+                    {
+                        <li>@item.Id &nbsp; @item.Account &nbsp; @item.UserName &nbsp; @item.PassWord &nbsp;@item.Remark</li>
+                    }
+                </ul>
+            </div>
+            <input type="button" value="注册" onclick="javascript:window.location.href = '/Task/Register/'" />
+        </div>
+    </form>*@
+
+<div class="panel">
+    <div class="panel-heading">
+        @*<div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                Dropdown
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+            </ul>
+        </div>*@
+        <input type="button" value="注册" class="ui-button-text" onclick="javascript:window.location.href = '/Task/Register/'" />
+    </div>
+    </div>
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>用户名</th>
+                    <th>帐号</th>
+                    @*<th>密码</th>*@
+                    <th>备注</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in result)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Account</td>
+                        <td>@item.UserName</td>
+                        @*<td>@item.PassWord</td>*@
+                        <td>@item.Remark</td>
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
