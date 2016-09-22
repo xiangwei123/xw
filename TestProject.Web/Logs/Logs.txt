@@ -3177,3 +3177,5 @@ DEBUG 2016-09-22 14:13:34,186 [1    ] Abp.AutoMapper.AbpAutoMapperModule       -
 DEBUG 2016-09-22 14:13:34,227 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - TestProject.UserService.Dto.UsersOutput
 DEBUG 2016-09-22 14:13:34,249 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TestProject.IAppService.ITaskAppService' with service name 'app/task'.
 DEBUG 2016-09-22 14:13:34,250 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'TestProject.UserService.IUserService' with service name 'app/user'.
+DEBUG 2016-09-22 14:14:16,650 [60   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2016-09-22 14:14:16,650 [60   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
