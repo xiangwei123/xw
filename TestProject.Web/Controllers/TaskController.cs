@@ -47,13 +47,16 @@ namespace TestProject.Web.Controllers
         public ActionResult LoginInfo(UsersInput input)
         {
            var result=_userService.GetUserByName(input);
-            var model=new UsersOutput()
+            if (result != null)
             {
-                UserName = result.UserName,
-                PassWord = result.PassWord,
-                Id = result.Id
-            };
-            Session["QQLOGIN"] = result;
+                var model = new UsersOutput()
+                {
+                    UserName = result.UserName,
+                    PassWord = result.PassWord,
+                    Id = result.Id
+                };
+                Session["QQLOGIN"] = result;
+            }
             return Json(result);
         }
 
@@ -64,6 +67,11 @@ namespace TestProject.Web.Controllers
         }
 
         public ActionResult PlayPage()
+        {
+            return View();
+        }
+
+        public ActionResult Login()
         {
             return View();
         }

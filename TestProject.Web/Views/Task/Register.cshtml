@@ -6,47 +6,55 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width"/>
+    <meta name="viewport" content="width=device-width" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <script src="~/Content/js/app.js"></script>
     <title></title>
 </head>
 <body>
-<div class="panel">
-    <div class="panel-heading">
-        <div>
-            <ul>
-                <li>
-                    帐&nbsp;&nbsp;&nbsp;号:<input id="Account" name="Account" type="text">
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    用户名:<input id="UserName" name="UserName" type="text">
-                </li>
-            </ul>
-            <ul>
-                <li>密&nbsp;&nbsp;&nbsp;码:<input id="PassWord" name="PassWord" type="text"></li>
-            </ul>
-            <ul>
-                <li>备&nbsp;&nbsp;&nbsp;注:<input id="Remark" name="Remark" type="text"></li>
-            </ul>
-            <ul>
-                <li>
-                    <input type="submit" value="注册" class="btn-warning" onclick="Register()"/>
-                </li>
-            </ul>
+    <div class="panel">
+        <div class="panel-heading">
+            <div>
+                <ul>
+                    <li>
+                        帐&nbsp;&nbsp;&nbsp;号:<input id="Account" name="Account" type="text">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        用户名:<input id="UserName" name="UserName" type="text">
+                    </li>
+                </ul>
+                <ul>
+                    <li>密&nbsp;&nbsp;&nbsp;码:<input id="PassWord" name="PassWord" type="password"></li>
+                </ul>
+                <ul>
+                    <li>备&nbsp;&nbsp;&nbsp;注:<input id="Remark" name="Remark" type="text"></li>
+                </ul>
+                <ul>
+                    <li>
+                        <input type="submit" value="注册" class="btn-warning" onclick="Register()" />
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
+<div class="row" style="float: left;">
+    <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img data-src="holder.js/100%x180" alt="..." src="~/Content/images/123.jpg"/>
+        </a>
+    </div>
+    <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img data-src="holder.js/100%x180" alt="..." src="~/Content/images/12345.jpg" />
+        </a>
+    </div>
+    ...
 </div>
-<div>
-    <img src="~/Content/images/123.jpg"/>
-    <img src="~/Content/images/12345.jpg" />
-</div>
+
 </body>
 </html>
 <script src="~/Content/js/jquery.min.js"></script>
-<script src="~/Content/js/app.js"></script>
 <script type="text/javascript" language="javascript">
     function Register() {
         var model = {};
@@ -55,9 +63,15 @@
         var password = $('#PassWord').val();
         if (account == "") {
             alert("帐号不能为空！");
+            return;
         }
-        if (username == "" || password=="") {
+        if (username == "" || password == "") {
             alert("用户名或密码不能为空！");
+            return;
+        }
+        if (username == password) {
+            alert("用户名和密码不能相同");
+            return;
         }
         model.Account = $('#Account').val();
         model.UserName = $('#UserName').val();
@@ -69,7 +83,7 @@
                 window.location.href = "/Task/Index";
             }
             //if (app.handleResponse(result)) {
-                
+
             //}
         });
     }
