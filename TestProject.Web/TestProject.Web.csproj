@@ -123,6 +123,8 @@
       <HintPath>..\packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.Enlightenment.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="QConnectSDK">
       <HintPath>C:\Users\xiangwei\Desktop\QConnectSDK.dll</HintPath>
     </Reference>
@@ -192,6 +194,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
     </Reference>
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Abp\Framework\scripts\abp.js" />
@@ -234,6 +237,8 @@
     <Content Include="Content\ckplayer\share\sohu.png" />
     <Content Include="Content\ckplayer\share\tianya.png" />
     <Content Include="Content\ckplayer\style.swf" />
+    <Content Include="Content\css\login2.css" />
+    <Content Include="Content\css\miniDialog.css" />
     <Content Include="Content\demo.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
@@ -241,8 +246,17 @@
     <Content Include="Content\fonts\Dharma Type Font License.txt" />
     <Content Include="Content\fonts\fontomas-webfont.svg" />
     <Content Include="Content\fonts\franchise-bold-webfont.svg" />
+    <Content Include="Content\images\1.jpg" />
+    <Content Include="Content\images\2.jpg" />
+    <Content Include="Content\images\3.jpg" />
+    <Content Include="Content\images\4.jpg" />
+    <Content Include="Content\images\5.jpg" />
+    <Content Include="Content\images\6.jpg" />
     <Content Include="Content\images\bg.jpg" />
     <Content Include="Content\images\ImageAttribution.txt" />
+    <Content Include="Content\js\chaj-tanchukuang.js" />
+    <Content Include="Content\js\jquery-1.9.0.min.js" />
+    <Content Include="Content\js\login.js" />
     <Content Include="Content\jquery-easyui-1.5\changelog.txt" />
     <Content Include="Content\jquery-easyui-1.5\easyloader.js" />
     <Content Include="Content\jquery-easyui-1.5\easyui-lang-zh_CN.js" />
@@ -656,6 +670,67 @@
     <Content Include="Content\js\jquery.min.js" />
     <Content Include="Content\js\jquery.uploadify.min.js" />
     <Content Include="Content\js\QQLogin.js" />
+    <Content Include="Content\src\css\background.png" />
+    <Content Include="Content\src\css\bigplay.fw.png" />
+    <Content Include="Content\src\css\bigplay.png" />
+    <Content Include="Content\src\css\bigplay.svg" />
+    <Content Include="Content\src\css\controls-ted.png" />
+    <Content Include="Content\src\css\controls-wmp-bg.png" />
+    <Content Include="Content\src\css\controls-wmp.png" />
+    <Content Include="Content\src\css\controls.fw.png" />
+    <Content Include="Content\src\css\controls.png" />
+    <Content Include="Content\src\css\controls.svg" />
+    <Content Include="Content\src\css\jumpforward.png" />
+    <Content Include="Content\src\css\loading.gif" />
+    <Content Include="Content\src\css\mediaelementplayer.css" />
+    <Content Include="Content\src\css\mejs-skins.css" />
+    <Content Include="Content\src\css\skipback.png" />
+    <Content Include="Content\src\js\jeesh-extras.js" />
+    <Content Include="Content\src\js\jeesh.js" />
+    <Content Include="Content\src\js\me-featuredetection.js" />
+    <Content Include="Content\src\js\me-header.js" />
+    <Content Include="Content\src\js\me-i18n-locale-de.js" />
+    <Content Include="Content\src\js\me-i18n-locale-en.js" />
+    <Content Include="Content\src\js\me-i18n-locale-es.js" />
+    <Content Include="Content\src\js\me-i18n-locale-fr.js" />
+    <Content Include="Content\src\js\me-i18n-locale-it.js" />
+    <Content Include="Content\src\js\me-i18n-locale-ja.js" />
+    <Content Include="Content\src\js\me-i18n-locale-ko.js" />
+    <Content Include="Content\src\js\me-i18n-locale-pt-br.js" />
+    <Content Include="Content\src\js\me-i18n-locale-pt.js" />
+    <Content Include="Content\src\js\me-i18n-locale-zh-cn.js" />
+    <Content Include="Content\src\js\me-i18n-locale-zh.js" />
+    <Content Include="Content\src\js\me-i18n.js" />
+    <Content Include="Content\src\js\me-mediaelements.js" />
+    <Content Include="Content\src\js\me-namespace.js" />
+    <Content Include="Content\src\js\me-plugindetector.js" />
+    <Content Include="Content\src\js\me-shim.js" />
+    <Content Include="Content\src\js\me-utility.js" />
+    <Content Include="Content\src\js\mep-feature-ads-vast.js" />
+    <Content Include="Content\src\js\mep-feature-ads.js" />
+    <Content Include="Content\src\js\mep-feature-backlight.js" />
+    <Content Include="Content\src\js\mep-feature-contextmenu.js" />
+    <Content Include="Content\src\js\mep-feature-endedhtml.js" />
+    <Content Include="Content\src\js\mep-feature-fullscreen.js" />
+    <Content Include="Content\src\js\mep-feature-googleanalytics.js" />
+    <Content Include="Content\src\js\mep-feature-jumpforward.js" />
+    <Content Include="Content\src\js\mep-feature-loop.js" />
+    <Content Include="Content\src\js\mep-feature-playlist.js" />
+    <Content Include="Content\src\js\mep-feature-playpause.js" />
+    <Content Include="Content\src\js\mep-feature-postroll.js" />
+    <Content Include="Content\src\js\mep-feature-progress.js" />
+    <Content Include="Content\src\js\mep-feature-skipback.js" />
+    <Content Include="Content\src\js\mep-feature-sourcechooser.js" />
+    <Content Include="Content\src\js\mep-feature-speed.js" />
+    <Content Include="Content\src\js\mep-feature-stop.js" />
+    <Content Include="Content\src\js\mep-feature-time.js" />
+    <Content Include="Content\src\js\mep-feature-tracks.js" />
+    <Content Include="Content\src\js\mep-feature-universalgoogleanalytics.js" />
+    <Content Include="Content\src\js\mep-feature-visualcontrols.js" />
+    <Content Include="Content\src\js\mep-feature-volume.js" />
+    <Content Include="Content\src\js\mep-header.js" />
+    <Content Include="Content\src\js\mep-library.js" />
+    <Content Include="Content\src\js\mep-player.js" />
     <Content Include="Content\style.css" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
@@ -752,6 +827,17 @@
     <Content Include="Content\fonts\franchise-bold-webfont.eot" />
     <Content Include="Content\fonts\franchise-bold-webfont.ttf" />
     <Content Include="Content\fonts\franchise-bold-webfont.woff" />
+    <Content Include="Content\src\flash\flashls.swc" />
+    <Content Include="Content\src\flash\FlashMediaElement.as" />
+    <Content Include="Content\src\flash\FlashMediaElement.fla" />
+    <Content Include="Content\src\flash\flashmediaelement.swc" />
+    <Content Include="Content\src\flash\htmlelements\AudioElement.as" />
+    <Content Include="Content\src\flash\htmlelements\DailyMotionElement.as" />
+    <Content Include="Content\src\flash\htmlelements\HLSMediaElement.as" />
+    <Content Include="Content\src\flash\htmlelements\IMediaElement.as" />
+    <Content Include="Content\src\flash\htmlelements\VideoElement.as" />
+    <Content Include="Content\src\flash\htmlelements\YouTubeElement.as" />
+    <Content Include="Content\src\flash\HtmlMediaEvent.as" />
     <None Include="Properties\PublishProfiles\MyProjectWebConfig.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -853,6 +939,9 @@
       <Project>{5eb52d3d-09fd-463a-b02a-8d9856bd3724}</Project>
       <Name>TestProject.WebApi</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

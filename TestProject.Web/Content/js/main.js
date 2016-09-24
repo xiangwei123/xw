@@ -4,13 +4,9 @@
 //    });
 //})();
 
-$(function () {
-    var url = '/Content/video/test.mp4';
-    showvideo(url);
-})
 function showvideo(url) {
     var flashvars = {
-        f: url,
+        f: '/Content/video/'+url,
         c: 0,
         p: 1,
     };

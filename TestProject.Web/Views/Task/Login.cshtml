@@ -2,90 +2,303 @@
     Layout = null;
 }
 
-<!DOCTYPE html>
-<html lang="en" class="no-js">
+@*<!DOCTYPE html>
+    <html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3"/>
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class"/>
+        <meta name="author" content="Codrops"/>
+        <link rel="stylesheet" type="text/css" href="~/Content/demo.css"/>
+        <link rel="stylesheet" type="text/css" href="~/Content/style.css"/>
+        <link rel="stylesheet" type="text/css" href="~/Content/animate-custom.css"/>
+        <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    </head>
+    <body>
+    <div id="wrapper">
+        <div id="login" class="animate form">
+
+                <h1>Log in</h1>
+                <p>
+                    <label for="username" class="uname" data-icon="u"> Your email or username </label>
+                    <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+                </p>
+                <p>
+                    <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                </p>
+                <p class="keeplogin">
+                    <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping"/>
+                    <label for="loginkeeping">Keep me logged in</label>
+                </p>
+                <p class="login button">
+                    <input type="submit" value="Login" onclick="Login()"/>
+                </p>
+                <p class="change_link">
+                    Not a member yet ?
+                    <a href="#toregister" class="to_register">Join us</a>
+                </p>
+
+        </div>
+
+        <div id="register" class="animate form">
+
+                <h1> Sign up </h1>
+                <p>
+                    <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690"/>
+                </p>
+                <p>
+                    <label for="emailsignup" class="youmail" data-icon="e"> Your email</label>
+                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/>
+                </p>
+                <p>
+                    <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                </p>
+                <p>
+                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                </p>
+                <p class="signin button">
+                    <input type="button" onclick="Login()" value="Sign up"/>
+                </p>
+                <p class="change_link">
+                    Already a member ?
+                    <a href="#tologin" class="to_register"> Go and log in </a>
+                </p>
+        </div>
+
+    </div>
+    </body>
+    </html>*@
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8"/>
-    <title>Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Login and Registration Form with HTML5 and CSS3"/>
-    <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class"/>
-    <meta name="author" content="Codrops"/>
-    <link rel="stylesheet" type="text/css" href="~/Content/demo.css"/>
-    <link rel="stylesheet" type="text/css" href="~/Content/style.css"/>
-    <link rel="stylesheet" type="text/css" href="~/Content/animate-custom.css"/>
-    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <title>胡泽文电影网</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="/Content/js/jquery-1.9.0.min.js"></script>
+    <script src="/Content/js/login.js"></script>
+    <link href="/Content/css/login2.css" rel="stylesheet" />
+    <link href="~/Content/css/miniDialog.css" rel="stylesheet" />
+    <script src="~/Content/js/chaj-tanchukuang.js"></script>
 </head>
-<body>
-<div id="wrapper">
-    <div id="login" class="animate form">
-      
-            <h1>Log in</h1>
-            <p>
-                <label for="username" class="uname" data-icon="u"> Your email or username </label>
-                <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
-            </p>
-            <p>
-                <label for="password" class="youpasswd" data-icon="p"> Your password </label>
-                <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO"/>
-            </p>
-            <p class="keeplogin">
-                <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping"/>
-                <label for="loginkeeping">Keep me logged in</label>
-            </p>
-            <p class="login button">
-                <input type="submit" value="Login" onclick="Login()"/>
-            </p>
-            <p class="change_link">
-                Not a member yet ?
-                <a href="#toregister" class="to_register">Join us</a>
-            </p>
-      
-    </div>
+<body class="bodyClass" style="background: #fff url(/Content/images/1.jpg) 50% 0 no-repeat;">
+    <h1 style="margin-bottom: 20px">
+        胡泽文电影网<sup>AVI<sup style="font-size: 8px; color: #333">2016</sup></sup>
+        </h1>
+        <script>
+        $(function () {
+            //图片数组
+            var sArr = ['/Content/images/1.jpg', '/Content/images/2.jpg', '/Content/images/3.jpg', '/Content/images/4.jpg', '/Content/images/5.jpg', '/Content/images/6.jpg'];
+            //定时更换背景
+            setInterval(function () {
+                $("body").css("backgroundImage", "url(" + sArr[fRandomBy(0, 2)] + ")");
+            }, 3000);
 
-    <div id="register" class="animate form">
-      
-            <h1> Sign up </h1>
-            <p>
-                <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
-                <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690"/>
-            </p>
-            <p>
-                <label for="emailsignup" class="youmail" data-icon="e"> Your email</label>
-                <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/>
-            </p>
-            <p>
-                <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
-                <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
-            </p>
-            <p>
-                <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
-                <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
-            </p>
-            <p class="signin button">
-                <input type="button" onclick="Login()" value="Sign up"/>
-            </p>
-            <p class="change_link">
-                Already a member ?
-                <a href="#tologin" class="to_register"> Go and log in </a>
-            </p>
-    </div>
+            function fRandomBy(under, over) {
+                switch (arguments.length) {
+                case 1:
+                    return parseInt(Math.random() * under + 4);
+                case 2:
+                    return parseInt(Math.random() * (over - under + 4) + under);
+                default:
+                    return 0;
+                }
+            }
+        })
+    </script>
+        <h1 style="font-size: 18px; margin-top: 0px">因为老胡爱AV，所以我们更专业</h1>
 
-</div>
+        <div class="login" style="margin-top: 50px;">
+
+            <div class="header">
+                <div class="switch" id="switch">
+                    <a class="switch_btn_focus" id="switch_qlogin" href="javascript:void(0);" tabindex="7">快速登录</a>
+                    <a class="switch_btn" id="switch_login" href="javascript:void(0);" tabindex="8">快速注册</a>
+                    <div class="switch_bottom" id="switch_bottom" style="position: absolute; width: 64px; left: 0px;"></div>
+                </div>
+            </div>
+
+
+            <div class="web_qr_login" id="web_qr_login" style="display: block; height: 235px;">
+
+                <!--登录-->
+                <div class="web_login" id="web_login">
+
+
+                    <div class="login-box">
+
+
+                        <div class="login_form">
+                            <form action="" name="loginform" accept-charset="utf-8" id="login_form" class="loginForm" method="post">
+                                <input type="hidden" name="did" value="0" />
+                                <input type="hidden" name="to" value="log" />
+                                <div class="uinArea" id="uinArea">
+                                    <label class="input-tips" for="u">帐号：</label>
+                                    <div class="inputOuter" id="uArea">
+
+                                        <input type="text" id="username" class="inputstyle" />
+                                    </div>
+                                </div>
+                                <div class="pwdArea" id="pwdArea">
+                                    <label class="input-tips" for="p">密码：</label>
+                                    <div class="inputOuter" id="pArea">
+
+                                        <input type="password" id="password" class="inputstyle" />
+                                    </div>
+                                </div>
+
+                                <div style="padding-left: 50px; margin-top: 20px;">
+                                    <input type="button" value="登 录" onclick="Login()" style="width: 150px;" class="button_blue" />
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--登录end-->
+            </div>
+
+            <!--注册-->
+            <div class="qlogin" id="qlogin" style="display: none;">
+
+                <div class="web_login">
+                    <form name="form2" id="regUser" accept-charset="utf-8" action="" >
+                        <input type="hidden" name="to" value="reg" />
+                        <input type="hidden" name="did" value="0" />
+                        <ul class="reg_form" id="reg-ul">
+                            <div id="userCue" class="cue">快速注册请注意格式</div>
+                            <li>
+                                <label for="user" class="input-tips2">用户名：</label>
+                                <div class="inputOuter2">
+                                    <input type="text" id="user" name="user" maxlength="16" class="inputstyle2" />
+                                </div>
+
+                            </li>
+
+                            <li>
+                                <label for="passwd" class="input-tips2">密码：</label>
+                                <div class="inputOuter2">
+                                    <input type="password" id="passwd" name="passwd" maxlength="16" class="inputstyle2" />
+                                </div>
+
+                            </li>
+                            <li>
+                                <label for="passwd2" class="input-tips2">确认密码：</label>
+                                <div class="inputOuter2">
+                                    <input type="password" id="passwd2" name="" maxlength="16" class="inputstyle2" />
+                                </div>
+
+                            </li>
+
+                            <li>
+                                <label for="qq" class="input-tips2">QQ：</label>
+                                <div class="inputOuter2">
+
+                                    <input type="text" id="qq" name="qq" maxlength="10" class="inputstyle2" />
+                                </div>
+
+                            </li>
+
+                            <li>
+                                <div class="inputArea">
+                                    <input type="button" id="reg" style="margin-top: 10px; margin-left: 85px;" class="button_blue" value="同意协议并注册" onclick="Register()" /> <a href="#" class="zcxy" target="_blank">注册协议</a>
+                                </div>
+
+                            </li>
+                            <div class="cl"></div>
+                        </ul>
+                    </form>
+
+
+                </div>
+
+
+            </div>
+            <!--注册end-->
+        </div>
+    <div class="jianyi">*推荐使用ie8或以上版本ie浏览器或Chrome内核浏览器访问本站</div>
 </body>
 </html>
 <script>
- function Login() {
+    function Register() {
+        if ($('#user').val() == "") {
+            $('#user').focus().css({
+                border: "1px solid red",
+                boxShadow: "0 0 2px red"
+            });
+            $('#userCue').html("<font color='red'><b>×用户名不能为空</b></font>");
+            return false;
+        }
+        if ($('#user').val().length < 4 || $('#user').val().length > 16) {
+
+            $('#user').focus().css({
+                border: "1px solid red",
+                boxShadow: "0 0 2px red"
+            });
+            $('#userCue').html("<font color='red'><b>×用户名位4-16字符</b></font>");
+            return false;
+
+        }
+        if ($('#passwd').val().length < pwdmin) {
+            $('#passwd').focus();
+            $('#userCue').html("<font color='red'><b>×密码不能小于" + pwdmin + "位</b></font>");
+            return false;
+        }
+        if ($('#passwd2').val() != $('#passwd').val()) {
+            $('#passwd2').focus();
+            $('#userCue').html("<font color='red'><b>×两次密码不一致！</b></font>");
+            return false;
+        }
+
+        var sqq = /^[1-9]{1}[0-9]{4,9}$/;
+        if (!sqq.test($('#qq').val()) || $('#qq').val().length < 5 || $('#qq').val().length > 12) {
+            $('#qq').focus().css({
+                border: "1px solid red",
+                boxShadow: "0 0 2px red"
+            });
+            $('#userCue').html("<font color='red'><b>×QQ号码格式不正确</b></font>"); return false;
+        } else {
+            $('#qq').css({
+                border: "1px solid #D7D7D7",
+                boxShadow: "none"
+            });
+
+        }
+            var model = {};
+            var account = $('#qq').val();
+            var username = $('#user').val();
+            var password1 = $('#passwd').val().trim();
+            var password2 = $('#passwd2').val().trim();
+            model.Account = account;
+            model.UserName = username;
+            model.PassWord = password2;
+            model.Remark = $('#Remark').val();
+            $.post("/Task/InsertUser", { input: model }, function (result) {
+                if (result.success) {
+                   alert("注册成功！");
+                    window.location.href = "/Task/Index";
+                }
+            });
+    }
+    function Login() {
         var model = {};
-        model.UserName = $('#username').val().trim();
-        model.PassWord = $('#password').val().trim();
+        model.UserName = $('#username').val();
+        model.PassWord = $('#password').val();
         //userService.getUserByName().done(function(result) {
         //    success(result);
         //});
         $.post('/Task/LoginInfo', { input: model }, function (result) {
             if (result.result != null) {
                 if (result.result.state) {
-                    alert('登录成功，可以在线观看杨颖！');
+                    alert('登录成功，进入老胡AV世界！');
                     window.location.href = "/Task/Index";
                 } else {
                     alert('登录成功，但你的帐号没有通过审核！');
@@ -95,5 +308,38 @@
                 alert("没账号,登你吗个臭嗨！");
             }
         });
- }
-    </script>
+    }
+    //function Register() {
+    //    var model = {};
+    //    var account = $('#qq').val();
+    //    var username = $('#user').val();
+    //    var password1 = $('#passwd').val().trim();
+    //    var password2 = $('#passwd2').val().trim();
+    //    if (password2 == "") {
+    //        alert("确认密码不能为空！");
+    //        return;
+    //    }
+    //    if (username == "" || password1 == "") {
+    //        alert("用户名或密码不能为空！");
+    //        return;
+    //    }
+    //    if (username == password) {
+    //        alert("用户名和密码不能相同");
+    //        return;
+    //    }
+    //    model.Account = account;
+    //    model.UserName = username;
+    //    model.PassWord = password2;
+    //    model.Remark = $('#Remark').val();
+    //    $.post("/Task/InsertUser", { input: model }, function (result) {
+    //        if (result.success) {
+    //            alert("注册成功！");
+    //            window.location.href = "/Task/Index";
+    //        }
+    //        //if (app.handleResponse(result)) {
+
+    //        //}
+    //    });
+    //}
+
+</script>

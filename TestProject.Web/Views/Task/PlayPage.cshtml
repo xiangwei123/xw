@@ -10,7 +10,6 @@
     <script src="~/Content/js/jquery-1.7.1.min.js"></script>
     <script src="~/Content/ckplayer/ckplayer.js"></script>
     <script src="~/Content/js/jquery.min.js"></script>
-    <script src="~/Content/js/app.js"></script>
     <script src="~/Content/js/main.js"></script>
     <style>
         * {
@@ -53,10 +52,10 @@
         </ul>
 
         <ul>
-            <li data-value="test"><a href="javascript:void(0)">测试</a></li>
+            <li  onclick="showvideo('test.mp4')" ><a href="javascript:void(0)">测试</a></li>
             @*<li data-value="AngleBaby"><a href="javascript:void(0)">日本AngleBaby</a></li>*@
-            <li data-value="20160921"><a href="javascript:void(0)">大洋马1</a></li>
-            <li data-value="20160922"><a href="javascript:void(0)">大洋马</a></li>
+            <li  onclick="showvideo('20160921.mp4')"><a href="javascript:void(0)">大洋马1</a></li>
+            <li  onclick="showvideo('20160922')"><a href="javascript:void(0)">大洋马</a></li>
         </ul>
 
         <div id="video">
